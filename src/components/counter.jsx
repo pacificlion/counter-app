@@ -14,6 +14,14 @@ class Counter extends Component {
     }
     console.log("Counter-mounted");
   }
+
+  /**
+   * end of life cycle for that component
+   */
+  componentWillUnmount() {
+    // to be used for performing any clean ups
+    console.log("Counter-unmounted");
+  }
   render() {
     console.log("Counter-rendered");
     return (
